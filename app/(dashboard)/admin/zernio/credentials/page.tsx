@@ -1,5 +1,6 @@
 import { createClient } from '@/utils/supabase/server'
 import { redirect } from 'next/navigation'
+import Link from 'next/link'
 import { Plus, Server, CheckCircle2, AlertCircle, XCircle } from 'lucide-react'
 
 export default async function ZernioCredentialsPage() {
@@ -30,10 +31,13 @@ export default async function ZernioCredentialsPage() {
           <h1 className="text-2xl font-bold tracking-tight text-gray-900">Zernio Credentials</h1>
           <p className="text-sm text-gray-500 mt-1">Manage API credentials and load balancing pools.</p>
         </div>
-        <button className="inline-flex items-center gap-2 rounded-xl bg-blue-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 transition-colors">
+        <Link 
+          href="/admin/zernio/credentials/new"
+          className="inline-flex items-center gap-2 rounded-xl bg-blue-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 transition-colors"
+        >
           <Plus className="w-4 h-4" />
           Add Credential
-        </button>
+        </Link>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
