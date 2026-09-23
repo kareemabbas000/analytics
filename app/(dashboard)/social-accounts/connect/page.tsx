@@ -1,5 +1,5 @@
 import { connectAccount } from '../actions'
-import { Instagram, Facebook, Twitter, Youtube, ArrowLeft } from 'lucide-react'
+import { Image as Instagram, Users as Facebook, AtSign as Twitter, Video as Youtube, ArrowLeft } from 'lucide-react'
 import Link from 'next/link'
 
 export default function ConnectChannelPage() {

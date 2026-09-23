@@ -1,6 +1,6 @@
 import { createClient } from '@/utils/supabase/server'
 import Link from 'next/link'
-import { Plus, CheckCircle2, Instagram, Facebook, Twitter, Youtube } from 'lucide-react'
+import { Plus, CheckCircle2, Image as Instagram, Users as Facebook, AtSign as Twitter, Video as Youtube } from 'lucide-react'
 
 export default async function SocialAccountsPage() {
   const supabase = await createClient()
